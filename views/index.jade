@@ -1,0 +1,21 @@
+doctype html 
+//extends layout
+html 
+  head 
+    style.  
+      body{ font-family: Arial; margin: 20px;}
+      .book {margin-bottom: 20px; padding 15px; border: 1px solid #ddd}
+      .title {font-size: 18px}
+      .author {color: #666;}
+    //p Welcome to #{title}
+
+  body
+    h1 Currently Reading
+    //block content
+    a(href=link)= title 
+    p #{author}
+
+<a href="/read">read</a>
+
+if error 
+  p.error Error: #{error}

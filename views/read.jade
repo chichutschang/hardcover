@@ -1,0 +1,25 @@
+doctype html 
+//extends layout
+html 
+  head 
+    style.  
+      body{ font-family: Arial; margin: 20px;}
+      .book {margin-bottom: 20px; padding 15px; border: 1px solid #ddd}
+      .title {font-size: 18px}
+      .author {color: #666;}
+    body
+      h1 Read
+
+      if books && books.length > 0
+            each book in books 
+                .book 
+                    h2
+                    a(href=book.link)= book.title 
+                    p Author:  #{book.author} 
+                    if book.dateread 
+                        p Finished: #{new Date(book.dateread).toLocaleDateString()}
+
+      else 
+        p No book read yet
+
+
